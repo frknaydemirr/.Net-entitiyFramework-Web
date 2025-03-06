@@ -1,0 +1,64 @@
+﻿@model IEnumerable<KurumsalWebProjesii.Models.Model.Kimlik>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+        <p>
+            yeni kayıt ekleme listesi
+            @Html.ActionLink("Yeni Ekle", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.KeyWords)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LogoURL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Unvan)
+                </th>
+                <th>
+                    İşlemler
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KeyWords)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LogoURL)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Unvan)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Güncelle", "Edit", new { id = item.Kimlikıd }) |
+
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+
