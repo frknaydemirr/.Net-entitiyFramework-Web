@@ -37,6 +37,7 @@ namespace KurumsalWebProjesii.Controllers
         // POST: Kimlik/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [ValidateInput(false)]
         public ActionResult Edit(int id, Kimlik kimlik,HttpPostedFileBase LogoURL)
         {
             if (ModelState.IsValid)
@@ -44,20 +45,20 @@ namespace KurumsalWebProjesii.Controllers
                 var k = db.Kimlik.Where(x => x.Kimlikıd == id).SingleOrDefault();
 
                 //daha önce kaydettiğimiz bir dosya var mı onu kontrol edeceğiz:
-                if(LogoURL != null)
+                if (LogoURL != null)
                 {
-                    if (System.IO.File.Exists(Server.MapPath(kimlik.LogoURL)))
+                    if (System.IO.File.Exists(Server.MapPath(k.LogoURL)))
                     {
-                        System.IO.File.Delete(Server.MapPath(kimlik.LogoURL));
+                        System.IO.File.Delete(Server.MapPath(k.LogoURL));
                     }
                     //yoksa resim yükleme işlemini yap:
                     WebImage img = new WebImage(LogoURL.InputStream);
                     FileInfo imginfo = new FileInfo(LogoURL.FileName);
 
-                    string Logoname = imginfo.FullName;
+                    string Logoname = imginfo.FullName + imginfo.Extension ;
                     img.Resize(300, 200);
-                    img.Save("Uploads/Kimlik/" + Logoname);
-                    kimlik.LogoURL = "Uploads/Kimlik/" + Logoname;
+                    img.Save("~/Uploads/Kimlik/" + Logoname);
+                    k.LogoURL = "/Uploads/Kimlik/" + Logoname;
 
 
                 }
@@ -65,8 +66,7 @@ namespace KurumsalWebProjesii.Controllers
                 k.KeyWords = kimlik.KeyWords;
                 k.Description = kimlik.Description;
                 k.Unvan = kimlik.Unvan;
-                k.LogoURL = kimlik.LogoURL;
-                db.SaveChanges();
+                int v = db.SaveChanges();
                 return RedirectToAction("Index");
 
             }
