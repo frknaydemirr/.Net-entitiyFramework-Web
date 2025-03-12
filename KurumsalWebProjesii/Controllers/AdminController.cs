@@ -1,5 +1,6 @@
 ﻿using KurumsalWebProjesii.Models;
 using KurumsalWebProjesii.Models.DataContext;
+using KurumsalWebProjesii.Models.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +26,25 @@ namespace KurumsalWebProjesii.Controllers
 
             return View(sorgu);
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost] //login de form post olacak
+        public ActionResult Login(Admin admin) //admin modeli alır parametre;
+        {
+            var login = db.Admin.Where(x => x.Eposta == admin.Eposta).SingleOrDefault();
+            if ( login !=null && login.Eposta == admin.Eposta && login.Sifre==admin.Sifre)
+            {
+                //oturum değişkeni oluşturma:
+                Session["adminid"] = login.Adminıd;
+                Session["eposta"] = login.Eposta;
+                return RedirectToAction("Index","Admin");
+            }
+            ViewBag.Uyari = "Kullanıcı adı yada şifre yanlış!";
+            return View(admin);
+
+        }
     }
+    
 }

@@ -34,6 +34,7 @@ namespace KurumsalWebProjesii.Controllers
 
         [HttpPost]
         [ValidateInput(false)]
+        [ValidateAntiForgeryToken]
         //resim yükleme;
         public ActionResult Create(Blog blog, HttpPostedFileBase ResimURL)
         {
@@ -49,6 +50,47 @@ namespace KurumsalWebProjesii.Controllers
             db.Blog.Add(blog);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+
+        //id ye göre düzenleme yapacağız
+        public ActionResult Edit(int id)
+        {
+            if (id == null)
+            {
+                return HttpNotFound();
+
+            }
+            //dışardan gelen id ile blog id kontorolünü sağlar;
+            var b = db.Blog.Where(x => x.Blogıd == id).SingleOrDefault();
+            if (b == null)
+            {
+                return HttpNotFound();
+            }
+            ;//Veri taşıma işlemi:
+            ViewBag.KategoriId = new SelectList(db.Kategori, "KategoriId", "KategoriAd", b.Kategoriıd);
+            return View(b);
+        }
+
+
+
+
+        public ActionResult Delete(int id)
+        {
+            var b = db.Blog.Find(id);
+            if (b == null)
+            {
+                return HttpNotFound();
+            }
+
+            if (System.IO.File.Exists(Server.MapPath(b.ResimURL)))
+            {
+                System.IO.File.Delete(Server.MapPath(b.ResimURL));
+            }
+            db.Blog.Remove(b);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
         }
     }
 }

@@ -6,11 +6,30 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+
+<script src="~/Scripts/jquery-3.7.1.js"></script>
+<script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+<link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable(
+
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            }
+        );
+    });
+</script>
+@*bu script kodlar thead ve tbody olmadan çalışmıyor!*@
+
+
 <h2>Blog Kayıtları </h2>
 
 <a class="btn btn-danger" href="/Blog/Create">Yeni Blog Ekle</a>
 
-<table class="table table-striped">
+<table class="table table-striped" id="myTable">
     <thead>
         <tr>
             <th>#</th>
