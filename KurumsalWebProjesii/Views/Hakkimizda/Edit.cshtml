@@ -18,27 +18,30 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <h4>Hakkımızda</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.Hakkimizdaıd)
+<div class="form-horizontal">
+    <h4>Hakkımızda</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Hakkimizdaıd)
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Aciklama, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <textarea id="Aciklama" name="Aciklama" class="ckeditor">@Model.Aciklama</textarea>
 
-                @Html.ValidationMessageFor(model => model.Aciklama, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Güncelle" class="btn btn-default" />
-            </div>
+    <div class="form-group">
+        <label for="Aciklama" class="control-label col-lg-2">Açıklama <span class="required">*</span></label>
+        <div class="col-lg-10">
+            <textarea id="Aciklama" name="Aciklama" class="tinymce-editor" required>
+            @Model.Aciklama
+        </textarea>
+            @Html.ValidationMessageFor(model => model.Aciklama, "", new { @class = "text-danger" })
         </div>
     </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Güncelle" class="btn btn-default" />
+        </div>
+    </div>
+</div>
 }
 
 <div>

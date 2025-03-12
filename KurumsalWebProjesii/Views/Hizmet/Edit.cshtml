@@ -1,34 +1,37 @@
 ﻿@model KurumsalWebProjesii.Models.Model.Hizmet
-
-
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Edit";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+@*add view ile düzenlemeyi akrifleşltirdik*@
+<h2>Hizmet Düzenle</h2>
 
-
-<h2>Hizmet Ekle</h2>
-
-<div class="form">
-    <form class="form-validate form-horizontal" id="feedback_form" method="post" action="/Hizmet/Create/" enctype="multipart/form-data">
+<div class="form">                                                                                         @*//multipart/form-data ->resim yüklemeyle ilgili oln işlemler*@
+    <form class="form-validate form-horizontal" id="feedback_form" method="post" action="/Hizmet/Edit/@Model.Hizmetıd" enctype="multipart/form-data">
         <div class="form-group">
             <label for="name" class="control-label col-lg-2">Başlık <span class="required">*</span></label>
             <div class="col-lg-10">
-                <input class="form-control" id="Baslık" name="Baslık" minlength="5" type="text" required  />
+                <input class="form-control" id="Baslık" name="Baslık" minlength="5" type="text" required  value="@Model.Baslık" />
             </div>
         </div>
         <div class="form-group">
             <label for="email" class="control-label col-lg-2">Açıklama <span class="required">*</span></label>
             <div class="col-lg-10">
-                <textarea class="tinymce-editor" name="Acıklama" required> 
+                <textarea class="tinymce-editor" name="Acıklama" required> @Model.Acıklama
                 </textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="curl" class="control-label col-lg-2">Önceki Resim </label>
+            <div class="col-lg-10">
+                <img src="@Model.ResimURL" height="150" width="150" />
             </div>
         </div>
         <div class="form-group">
             <label for="curl" class="control-label col-lg-2">Resim </label>
             <div class="col-lg-10">
-                <input required class="form-control" type="file" name="ResimURL" accept=".jpg, .png, .jpeg" />
+                <input  class="form-control" type="file" name="ResimURL" accept=".jpg, .png, .jpeg" />
             </div>
         </div>
         <div class="form-group">
@@ -40,6 +43,3 @@
 
     </form>
 </div>
-
-
-

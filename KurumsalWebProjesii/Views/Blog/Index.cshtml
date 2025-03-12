@@ -1,0 +1,37 @@
+﻿
+@model IEnumerable<KurumsalWebProjesii.Models.Model.Blog>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Blog Kayıtları </h2>
+
+<a class="btn btn-danger" href="/Blog/Create">Yeni Blog Ekle</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Başlık</th>
+            <th>Kategori</th>
+            <th>Resim URL</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Blogıd</td>
+                <td>@item.Baslık</td>
+                <td>@item.Kategoriıd</td>
+                <td><img src="@item.ResimURL" width="100" height="100" /></td>
+                <td><a href="/Blog/Edit/@item.Blogıd">Güncelle</a> | <a href="/Blog/Delete/@item.Blogıd">Sil</a></td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>

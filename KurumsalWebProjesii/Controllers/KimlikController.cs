@@ -55,10 +55,11 @@ namespace KurumsalWebProjesii.Controllers
                     WebImage img = new WebImage(LogoURL.InputStream);
                     FileInfo imginfo = new FileInfo(LogoURL.FileName);
 
-                    string Logoname = imginfo.FullName + imginfo.Extension ;
+
+                    string logoname = LogoURL.FileName;
                     img.Resize(300, 200);
-                    img.Save("~/Uploads/Kimlik/" + Logoname);
-                    k.LogoURL = "/Uploads/Kimlik/" + Logoname;
+                    img.Save("~/Uploads/Kİmlik/" + logoname);
+                    k.LogoURL = "/Uploads/Kİmlik/" + logoname;
 
 
                 }
