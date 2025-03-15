@@ -51,12 +51,16 @@
                         </div>
 
                         <form class="row g-3 needs-validation" method="post"  action="/Admin/Login/">
-                            <p class="alert alert-danger">@ViewBag.Uyari</p>
+                            @if (Session["adminid"] == null)
+                            {
+                                <p class="alert alert-danger">@ViewBag.Uyari</p>
+                                }
+                            
                             <div class="col-12">
                                 <label for="yourEmail" class="form-label">E-posta</label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text" id="inputGroupPrepend"><i class="icon_profile"></i></span>
-                                    <input type="text" name="email" class="form-control"  placeholder="E-posta" required>
+                                    <input type="text" name="Eposta" class="form-control"  placeholder="E-posta" required>
                                     <div class="invalid-feedback">Please enter your email.</div>
                                 </div>
                             </div>

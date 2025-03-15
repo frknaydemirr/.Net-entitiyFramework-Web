@@ -34,7 +34,7 @@ namespace KurumsalWebProjesii.Controllers
         public ActionResult Login(Admin admin) //admin modeli alır parametre;
         {
             var login = db.Admin.Where(x => x.Eposta == admin.Eposta).SingleOrDefault();
-            if ( login !=null && login.Eposta == admin.Eposta && login.Sifre==admin.Sifre)
+            if (login != null && login.Eposta == admin.Eposta && login.Sifre==admin.Sifre)
             {
                 //oturum değişkeni oluşturma:
                 Session["adminid"] = login.Adminıd;
@@ -45,6 +45,17 @@ namespace KurumsalWebProjesii.Controllers
             return View(admin);
 
         }
+        public ActionResult Logout()
+        {
+            Session["adminid"] = null;
+            Session["eposta"] = null;
+            Session.Abandon(); //sessionları düşürme kısmı:
+            return RedirectToAction("Login/Admin");
+            
+        }
+
+
+
     }
     
 }

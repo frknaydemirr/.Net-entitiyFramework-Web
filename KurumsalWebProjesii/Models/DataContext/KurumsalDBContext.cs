@@ -30,6 +30,8 @@ namespace KurumsalWebProjesii.Models.DataContext
 
         public DbSet<Kimlik> Kimlik { get; set; }
 
+        public DbSet<Slider> Slider { get; set; }
+
 
     }
 }
