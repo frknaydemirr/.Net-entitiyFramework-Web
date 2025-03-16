@@ -1,0 +1,100 @@
+﻿@model KurumsalWebProjesii.Models.Model.Hakkimizda
+@{
+    ViewBag.Title = "Hakkımızda";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+
+
+
+
+
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+        <div class="container position-relative">
+            <h1>Kurumsal Web Hakkında </h1>
+            <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- End Page Title -->
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+        <div class="container">
+
+            <div class="row gy-4">
+                <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                    <img src="~/Content/SiteLayout/assets/img/about.jpg" class="img-fluid" alt="">
+                   <p>@Html.Raw(Model.Aciklama)</p>
+                </div>
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Kurumsal Web Sitesi Hakkında Detaylı Bilgiler.</h3>
+                    <p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                        <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                        <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                    </ul>
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /About Section -->
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Clients</p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Projects</p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Hours Of Support</p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Workers</p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Stats Section -->
+
+
+    
