@@ -35,8 +35,9 @@
                             <img src="@item.ResimURL" class="img-fluid" alt="@item.Acıklama">
                             <div class="portfolio-info">
                                 <h4>@item.Baslık</h4>
-                                <p>@item.Acıklama</p>
-                                <a href="@item.ResimURL" title="@item.Baslık" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <p>@Html.Raw(item.Acıklama)</p>
+
+                                <a href="@item.ResimURL" title="@item.Acıklama" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="@item.Acıklama" class="details-link"><i class="bi bi-link-45deg"></i></a>
                             </div>
                         </div>

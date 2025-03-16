@@ -21,7 +21,8 @@
         <div class="form-group">
             <label for="cemail" class="control-label col-lg-2">Kategori <span class="required">*</span></label>
             <div class="col-lg-10">
-                @Html.DropDownList("KategoriId", null, new { @class = "form-control" })
+                @Html.DropDownList("KategoriId", (IEnumerable<SelectListItem>)ViewBag.KategoriId, "Kategori Seçin", new { @class = "form-control" })
+
             </div>
         </div>
         <div class="form-group">

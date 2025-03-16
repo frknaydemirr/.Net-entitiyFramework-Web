@@ -68,8 +68,39 @@ namespace KurumsalWebProjesii.Controllers
                 return HttpNotFound();
             }
             ;//Veri taşıma işlemi:
-            ViewBag.KategoriId = new SelectList(db.Kategori, "KategoriId", "KategoriAd", b.Kategoriıd);
+            ViewBag.KategoriId = new SelectList(db.Kategori, "Kategoriıd", "KategoriAd", b.Kategoriıd);
             return View(b);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ValidateInput(false)]
+        public ActionResult Edit(int id, Blog blog,HttpPostedFileBase ResimURL)
+        {
+            if (ModelState.IsValid)
+            {
+                var b = db.Blog.Where(x => x.Blogıd == id).SingleOrDefault();
+                if (ResimURL != null)
+                {
+                    if (System.IO.File.Exists(Server.MapPath(b.ResimURL)))
+                    {
+                        System.IO.File.Delete(Server.MapPath(b.ResimURL));
+                    }
+
+                    WebImage img = new WebImage(ResimURL.InputStream);
+                    FileInfo imgInfo = new FileInfo(ResimURL.FileName);
+
+                    string blogimgname = Guid.NewGuid().ToString() + imgInfo.Extension;
+                    img.Resize(600, 400);
+                    img.Save("~/Uploads/Blog/" + blogimgname);
+                    b.ResimURL = "/Uploads/Blog/" + blogimgname;
+                }
+                b.Baslık = blog.Baslık;
+                b.Icerik = blog.Icerik;
+                b.Kategoriıd = blog.Kategoriıd;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(blog);
         }
 
 

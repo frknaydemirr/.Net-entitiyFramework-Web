@@ -1,0 +1,69 @@
+﻿@model KurumsalWebProjesii.Models.Model.Blog
+@{
+    ViewBag.Title = "BlogDetay";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+<h2>BlogDetay</h2>
+
+
+
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+        <div class="container position-relative">
+            <h1>Blog</h1>
+            <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current">Blog Detay</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- End Page Title -->
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+        <div class="container">
+            <div class="row gy-4">
+
+                    <div class="col-lg-8 col-md-8">
+                        <article>
+                            <div class="post-img">
+                                <img src="@Model.ResimURL" alt="@Model.Baslık" class="img-fluid w-100">
+                            </div>
+
+                            <p class="post-category">
+                                <a>@Model.Baslık </a>
+                            </p>
+                            <div class="post-meta">
+                                <p class="post-author">@Model.Kategori.KategoriAd</p>
+                            </div>
+
+                            <h2 class="title">
+                                @*@Html.Raw(@Model.Icerik)*@
+                                @*aaaaaaaa*@
+                                @Model.Icerik
+                                <!---h2 TAGI BOŞTA KALIYOR BUNU SOR ADMİNDEN GELEN BLOG KAYITLARINDA 
+                                    DÜZENLE KISMI SORUNLU, ICERİK KISMINI ÇEKTİĞİMİZ HALDE YANSITMIYOR
+                                    SOR!!!
+                                    Menü de anasayfa ya gitmiyor hata alıyoruz onu da sor mutlaka!
+                                    son OLARAK HER ŞEY DOĞRU MAİL ATMIYOR BUNU DA SOR!-->
+                            </h2>
+
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                            </div>
+                        </article>
+                    </div> 
+                
+            </div> 
+        </div> 
+    </section> 
+
+
+
+  
+
+</main>

@@ -1981,7 +1981,7 @@ section,
 }
 
 .blog-posts .post-img {
-  max-height: 240px;
+  max-height: 350px;
   margin: -30px -30px 15px -30px;
   overflow: hidden;
 }
