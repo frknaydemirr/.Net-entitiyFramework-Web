@@ -28,42 +28,118 @@
         <div class="container">
             <div class="row gy-4">
 
-                    <div class="col-lg-8 col-md-8">
-                        <article>
-                            <div class="post-img">
-                                <img src="@Model.ResimURL" alt="@Model.Baslık" class="img-fluid w-100">
+                <div class="col-lg-8 col-md-8">
+                    <article>
+                        <div class="post-img">
+                            <img src="@Model.ResimURL" alt="@Model.Baslık" class="img-fluid w-100">
+                        </div>
+
+                        <p class="post-category">
+                            <a>@Model.Baslık </a>
+                        </p>
+                        <div class="post-meta">
+                            <p class="post-author">@Model.Kategori.KategoriAd</p>
+                        </div>
+
+                        <h2 class="title">
+                            @*@Html.Raw(@Model.Icerik)*@
+                            @*aaaaaaaa*@
+                            @Model.Icerik
+                            <!---h2 TAGI BOŞTA KALIYOR BUNU SOR ADMİNDEN GELEN BLOG KAYITLARINDA
+                            DÜZENLE KISMI SORUNLU, ICERİK KISMINI ÇEKTİĞİMİZ HALDE YANSITMIYOR
+                            SOR!!!
+                            Menü de anasayfa ya gitmiyor hata alıyoruz onu da sor mutlaka!
+                            son OLARAK HER ŞEY DOĞRU MAİL ATMIYOR BUNU DA SOR!-->
+                        </h2>
+
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                        </div>
+                    </article>
+
+                    @*<div class="row">
+                        <div class="col-lg-8">
+                            <h3>Yorum Yap</h3>
+                            <div>
+                                <input  type="text" id="adsoyad" placeholder="Adınız Soyadınız" required class="form-control"/>
+
+                                <input type="email" id="eposta" placeholder="Mail Adresiniz " required class="form-control"/>
+
+                                <textarea typeof="text" id="icerik" class="form-control"></textarea>
+
+                                <button type="button" class="btn btn-success" id="gonder" value="Yorum Yap">Yorum Yap</button>
+
+
                             </div>
 
-                            <p class="post-category">
-                                <a>@Model.Baslık </a>
-                            </p>
-                            <div class="post-meta">
-                                <p class="post-author">@Model.Kategori.KategoriAd</p>
-                            </div>
 
-                            <h2 class="title">
-                                @*@Html.Raw(@Model.Icerik)*@
-                                @*aaaaaaaa*@
-                                @Model.Icerik
-                                <!---h2 TAGI BOŞTA KALIYOR BUNU SOR ADMİNDEN GELEN BLOG KAYITLARINDA 
-                                    DÜZENLE KISMI SORUNLU, ICERİK KISMINI ÇEKTİĞİMİZ HALDE YANSITMIYOR
-                                    SOR!!!
-                                    Menü de anasayfa ya gitmiyor hata alıyoruz onu da sor mutlaka!
-                                    son OLARAK HER ŞEY DOĞRU MAİL ATMIYOR BUNU DA SOR!-->
-                            </h2>
+                        </div>*@
+                    <!-- Comment Form Section -->
+                    <section id="comment-form" class="comment-form section">
+                        <div class="container ">
 
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                            </div>
-                        </article>
-                    </div> 
-                
-            </div> 
-        </div> 
-    </section> 
+                            <form action="/Home/YorumYap/@Model.Blogıd">
+
+                                <h4>Yorum Yap</h4>
+                                <div class="row ">
+                                    <div class=" form-group">
+                                        <input type="text" id="adsoyad" class="form-control" placeholder="Adınız Soyadınız" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col form-group">
+                                        <input type="email" class="form-control" id="eposta" placeholder="Mail Adresiniz" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col form-group">
+                                        <textarea typeof="text" class="form-control" id="icerik"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" id="gonder" class="btn btn-primary" value="Yorum Yap">Yorum Yap</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </section><!-- /Comment Form Section -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
 
 
 
-  
+
 
 </main>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#gonder").click(function () {
+            var adisoyadi = $("#adsoyad").val();
+            var epostasi = $("#eposta").val();
+            var yorumunuz = $("#icerik").val();
+            $.ajax({
+
+                url: '/Home/YorumYap/',
+                data: { adsoyad: adisoyadi, eposta: epostasi, icerik: yorumunuz,blogid: @Model.Blogıd },
+                type: 'POST',
+                dataType: 'Json',
+                success: function (data) {
+                    alert(adisoyadi + " - Yorumunuz eklendi, kontrol edildikten sonra yayınlanacaktır!");
+                }
+            });
+
+
+        });
+    })
+
+</script>

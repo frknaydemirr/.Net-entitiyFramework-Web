@@ -25,5 +25,7 @@ namespace KurumsalWebProjesii.Models.Model
 
         public Kategori Kategori { get; set; }
 
+        public ICollection<Yorum> Yorums { get; set; }
+
     }
 }

@@ -32,6 +32,8 @@ namespace KurumsalWebProjesii.Models.DataContext
 
         public DbSet<Slider> Slider { get; set; }
 
+        public DbSet<Yorum> Yorum { get; set; }
+
 
     }
 }

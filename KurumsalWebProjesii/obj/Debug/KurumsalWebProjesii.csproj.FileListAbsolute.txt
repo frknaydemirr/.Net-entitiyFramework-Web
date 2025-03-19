@@ -56,3 +56,7 @@ C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\EntityFramewor
 C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\EntityFramework.SqlServer.dll
 C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\EntityFramework.xml
 C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\EntityFramework.SqlServer.xml
+C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.dll
+C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.Mvc.dll
+C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.xml
+C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.Mvc.xml

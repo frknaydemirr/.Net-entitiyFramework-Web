@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
+using PagedList;
+using PagedList.Mvc;
 
 namespace KurumsalWebProjesii.Controllers
 {
@@ -76,15 +78,34 @@ namespace KurumsalWebProjesii.Controllers
                 
         }
 
-        public ActionResult Blog()
+        public ActionResult Blog(int Sayfa = 1)
         {
-            return View(db.Blog.Include("Kategori").ToList().OrderByDescending(x => x.Blogıd));
+            return View(db.Blog.Include("Kategori").OrderByDescending(x => x.Blogıd).ToPagedList(Sayfa, 5));
 
         }
         public ActionResult BlogDetay(int id)
         {
             var b = db.Blog.Include("Kategori").Where(x => x.Blogıd == id).SingleOrDefault();
             return View(b);
+        }
+
+        public  JsonResult YorumYap(string adsoyad, string eposta, string icerik, int Blogıd)
+        {
+
+            if(icerik == null)
+            {
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Içerik = icerik, Blogıd = Blogıd, Onay=false });
+                db.SaveChanges();
+                Response.Redirect("/Home/BlogDetay/" + Blogıd);
+
+                
+            }
+                return Json(false, JsonRequestBehavior.AllowGet);
+            //Json verilerinin alınıp gönderilmesine izin veriyoruz!
         }
 
         public ActionResult FooterPartial()

@@ -53,6 +53,12 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -995,6 +1001,7 @@
     <Content Include="Content\lang\vi.js" />
     <Content Include="Content\lang\zh-cn.js" />
     <Content Include="Content\lang\zh.js" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\plugins\a11yhelp\dialogs\a11yhelp.js" />
     <Content Include="Content\plugins\a11yhelp\dialogs\lang\af.js" />
     <Content Include="Content\plugins\a11yhelp\dialogs\lang\ar.js" />
@@ -1655,6 +1662,7 @@
     <Compile Include="Models\Model\Kategori.cs" />
     <Compile Include="Models\Model\Kimlik.cs" />
     <Compile Include="Models\Model\Slider.cs" />
+    <Compile Include="Models\Model\Yorum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
