@@ -13,7 +13,7 @@ namespace KurumsalWebProjesii.Models.Model
 	public class Blog
 	{
         [Key]
-        public int Blogıd { get; set; }
+        public int Id { get; set; }
 
         public string Baslık { get; set; }
 

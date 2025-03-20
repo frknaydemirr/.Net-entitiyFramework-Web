@@ -18,7 +18,7 @@ namespace KurumsalWebProjesii.Controllers
         {
 
               
-            return View(db.Blog.ToList().OrderByDescending(x=>x.Blogıd));    
+            return View(db.Blog.ToList().OrderByDescending(x=>x.Id));    
             // blog kayıtlarını liste şekline getir (veritabanı) ->en son yazdığımız kayıda göre sıralar
 
         }
@@ -62,7 +62,7 @@ namespace KurumsalWebProjesii.Controllers
 
             }
             //dışardan gelen id ile blog id kontorolünü sağlar;
-            var b = db.Blog.Where(x => x.Blogıd == id).SingleOrDefault();
+            var b = db.Blog.Where(x => x.Id == id).SingleOrDefault();
             if (b == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace KurumsalWebProjesii.Controllers
         {
             if (ModelState.IsValid)
             {
-                var b = db.Blog.Where(x => x.Blogıd == id).SingleOrDefault();
+                var b = db.Blog.Where(x => x.Id == id).SingleOrDefault();
                 if (ResimURL != null)
                 {
                     if (System.IO.File.Exists(Server.MapPath(b.ResimURL)))

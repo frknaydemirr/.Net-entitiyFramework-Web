@@ -60,3 +60,5 @@ C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.dll
 C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.Mvc.dll
 C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.xml
 C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\bin\PagedList.Mvc.xml
+C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\obj\Debug\KurumsalWebProjesii.Migrations.InitialCreateV1.resources
+C:\Users\Dell\Desktop\KurumsalWebProjesii\KurumsalWebProjesii\obj\Debug\KurumsalWebProjesii.csproj.GenerateResource.cache

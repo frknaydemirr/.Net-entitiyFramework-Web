@@ -78,7 +78,7 @@
                     <section id="comment-form" class="comment-form section">
                         <div class="container ">
 
-                            <form action="/Home/YorumYap/@Model.Blogıd">
+                            <form action="/Home/YorumYap">
 
                                 <h4>Yorum Yap</h4>
                                 <div class="row ">
@@ -96,6 +96,7 @@
                                         <textarea typeof="text" class="form-control" id="icerik"></textarea>
                                     </div>
                                 </div>
+                                <input type="hidden" name="Blogıd" value=" @Model.Id" />
 
                                 <div class="text-center">
                                     <button type="submit" id="gonder" class="btn btn-primary" value="Yorum Yap">Yorum Yap</button>
@@ -120,7 +121,7 @@
 
 
 </main>
-<script type="text/javascript">
+@*<script type="text/javascript">
     $(document).ready(function () {
 
         $("#gonder").click(function () {
@@ -130,7 +131,7 @@
             $.ajax({
 
                 url: '/Home/YorumYap/',
-                data: { adsoyad: adisoyadi, eposta: epostasi, icerik: yorumunuz,blogid: @Model.Blogıd },
+                data: { adsoyad: adisoyadi, eposta: epostasi, icerik: yorumunuz,blogid: @Model.Id },
                 type: 'POST',
                 dataType: 'Json',
                 success: function (data) {
@@ -142,4 +143,4 @@
         });
     })
 
-</script>
+</script>*@

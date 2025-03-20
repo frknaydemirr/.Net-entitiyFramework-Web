@@ -15,13 +15,13 @@ namespace KurumsalWebProjesii.Models.Model
         public int Adminıd { get; set; }
 
         [Required,StringLength(50,ErrorMessage ="50 karakter olmalıdır!")]
-        public String Eposta { get; set; }
+        public string Eposta { get; set; }
 
         [Required, StringLength(50, ErrorMessage = "50 karakter olmalıdır!")]
-        public String Sifre { get; set; }
+        public string Sifre { get; set; }
 
 
 
-        public String Yetki { get; set; }
+        public string Yetki { get; set; }
     }
 }

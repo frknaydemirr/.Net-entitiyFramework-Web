@@ -7,20 +7,100 @@
       "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\kurumsalwebprojesii\\views\\home\\blogdetay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\home\\blogdetay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\kurumsalwebprojesii\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\controllers\\iletisimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\controllers\\iletisimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\kurumsalwebprojesii\\models\\model\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\models\\model\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\models\\model\\hakkimizda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\hakkimizda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\kurumsalwebprojesii\\views\\home\\blogdetay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\home\\blogdetay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\views\\home\\hakkimizda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\home\\hakkimizda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\views\\hizmet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\hizmet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\views\\shared\\_sitelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\shared\\_sitelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\views\\home\\footerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\views\\home\\footerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\migrations\\202503201744191_initialcreatev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\migrations\\202503201744191_initialcreatev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\kurumsalwebprojesii\\models\\model\\yorum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\yorum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\models\\datacontext\\kurumsaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\datacontext\\kurumsaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\models\\model\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\models\\model\\kimlik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\kimlik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\models\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|c:\\users\\dell\\desktop\\kurumsalwebprojesii\\kurumsalwebprojesii\\models\\model\\hizmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F935686-2D5B-4B41-BA93-66197F5E2107}|KurumsalWebProjesii\\KurumsalWebProjesii.csproj|solutionrelative:kurumsalwebprojesii\\models\\model\\hizmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +118,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Iletisim.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Iletisim.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Home\\Iletisim.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Iletisim.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Home\\Iletisim.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEoAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T22:29:46.308Z",
+              "WhenOpened": "2025-03-20T18:10:13.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BlogDetay.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
-              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
-              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAgwHEAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IletisimController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\IletisimController.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Controllers\\IletisimController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\IletisimController.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Controllers\\IletisimController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T18:09:31.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA9wEoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T18:04:55.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FooterPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\FooterPartial.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Home\\FooterPartial.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\FooterPartial.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Home\\FooterPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T20:48:36.061Z",
+              "WhenOpened": "2025-03-20T17:46:32.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "202503201744191_InitialCreateV1.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Migrations\\202503201744191_InitialCreateV1.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Migrations\\202503201744191_InitialCreateV1.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Migrations\\202503201744191_InitialCreateV1.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Migrations\\202503201744191_InitialCreateV1.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:44:31.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:44:30.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowFAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:43:37.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Web.config",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Web.config",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Web.config",
+              "RelativeToolTip": "KurumsalWebProjesii\\Web.config",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-20T17:39:28.562Z",
               "EditorCaption": ""
             },
             {
@@ -70,33 +228,217 @@
               "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Blog.cs",
               "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Blog.cs",
               "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Blog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:43:26.062Z"
+              "WhenOpened": "2025-03-17T20:43:26.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Kategori.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Kategori.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Kategori.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Kategori.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Kategori.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:36:55.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwCsAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-17T22:29:46.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_SiteLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Shared\\_SiteLayout.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Shared\\_SiteLayout.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Shared\\_SiteLayout.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Shared\\_SiteLayout.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T17:53:18.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Hizmet\\Index.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Hizmet\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Hizmet\\Index.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Hizmet\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T17:53:34.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\packages.config",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\packages.config",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\packages.config",
+              "RelativeToolTip": "KurumsalWebProjesii\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-20T17:40:54.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Slider.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Slider.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Slider.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Slider.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Slider.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:38:23.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Hakkimizda.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Hakkimizda.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Hakkimizda.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Hakkimizda.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Hakkimizda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:36:40.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Blog.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Blog.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Home\\Blog.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Blog.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Home\\Blog.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADAAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T17:56:45.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogDetay.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Home\\BlogDetay.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-17T20:48:36.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAALsAAAAAAAAAAAAAAL0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T17:53:40.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Hakkimizda.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Hakkimizda.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Views\\Home\\Hakkimizda.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Views\\Home\\Hakkimizda.cshtml",
+              "RelativeToolTip": "KurumsalWebProjesii\\Views\\Home\\Hakkimizda.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T17:55:03.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Kimlik.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Kimlik.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Kimlik.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Kimlik.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Kimlik.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:36:59.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Admin.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Admin.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Admin.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Admin.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAcwBMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:36:15.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "KurumsalDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\DataContext\\KurumsalDBContext.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\DataContext\\KurumsalDBContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\DataContext\\KurumsalDBContext.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Models\\DataContext\\KurumsalDBContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:36:11.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Hizmet.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Hizmet.cs",
+              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Hizmet.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Hizmet.cs",
+              "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Hizmet.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:36:47.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Yorum.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Yorum.cs",
               "RelativeDocumentMoniker": "KurumsalWebProjesii\\Models\\Model\\Yorum.cs",
               "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Models\\Model\\Yorum.cs",
               "RelativeToolTip": "KurumsalWebProjesii\\Models\\Model\\Yorum.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:39:27.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "KurumsalWebProjesii\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\KurumsalWebProjesii\\KurumsalWebProjesii\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "KurumsalWebProjesii\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAwwGkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:06:53.526Z",
+              "WhenOpened": "2025-03-17T20:39:27.777Z",
               "EditorCaption": ""
             }
           ]

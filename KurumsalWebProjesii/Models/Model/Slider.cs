@@ -14,9 +14,9 @@ namespace KurumsalWebProjesii.Models.Model
         [Key]
         public int SliderId { get; set; }
         [DisplayName("Slider Başlık"),StringLength(30,ErrorMessage ="30 karakter olmalıdır!")]
-        public String  Baslık { get; set; }
+        public string  Baslık { get; set; }
         [DisplayName("Slider Açıklama"), StringLength(150, ErrorMessage = "150 karakter olmalıdır!")]
-        public String Aciklama { get; set; }
+        public string Aciklama { get; set; }
         [DisplayName("Slider Resim"), StringLength(250)]
         public   String ResimURL { get; set; }
 

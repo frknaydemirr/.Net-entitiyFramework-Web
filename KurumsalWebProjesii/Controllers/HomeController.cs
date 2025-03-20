@@ -18,9 +18,10 @@ namespace KurumsalWebProjesii.Controllers
         // GET: Home
         public ActionResult Index()
         {
-
+            ViewBag.Iletisim = db.Iletisim.SingleOrDefault() ?? new Iletisim();
+            ViewBag.Blog = db.Blog.ToList().OrderByDescending(x => x.Id);
             ViewBag.Hizmetler = db.Hizmet.ToList().OrderByDescending(X => X.Hizmetıd);
-                return View();
+            return View();
 
         }
 
@@ -41,12 +42,12 @@ namespace KurumsalWebProjesii.Controllers
         public ActionResult Hakkimizda()
         {
 
-            var hakkimizda = db.Hakkimizda.SingleOrDefault();
+            var hakkimizda = db.Hakkimizda.SingleOrDefault() ?? new Hakkimizda();
             return View(hakkimizda);
         }
         public ActionResult Hizmetlerimiz()
         {
-            return View(db.Hizmet.ToList().OrderByDescending(x=>x.Hizmetıd));
+            return View(db.Hizmet.ToList().OrderByDescending(x => x.Hizmetıd));
         }
 
 
@@ -61,13 +62,13 @@ namespace KurumsalWebProjesii.Controllers
             //mail gönderma hatalı -> sor hatayı öğren!
             if (adsoyad != null && email != null && konu != null && mesaj != null)
             {
-            WebMail.SmtpServer = "smtp.gmail.com";
-            WebMail.EnableSsl = true;
-            WebMail.UserName = "kurumsawebkurumsalweb@gmail.com";
-            WebMail.Password = "Kurumsalweb123";
-            WebMail.SmtpPort = 587;
-            WebMail.Send("kurumsawebkurumsalweb@gmail.com", konu, email + "-" + mesaj);
-            ViewBag.Uyari = "Mesajınız başarıyla gönderildi!";
+                WebMail.SmtpServer = "smtp.gmail.com";
+                WebMail.EnableSsl = true;
+                WebMail.UserName = "kurumsawebkurumsalweb@gmail.com";
+                WebMail.Password = "Kurumsalweb123";
+                WebMail.SmtpPort = 587;
+                WebMail.Send("kurumsawebkurumsalweb@gmail.com", konu, email + "-" + mesaj);
+                ViewBag.Uyari = "Mesajınız başarıyla gönderildi!";
             }
             else
             {
@@ -75,43 +76,42 @@ namespace KurumsalWebProjesii.Controllers
             }
 
             return View();
-                
+
         }
 
         public ActionResult Blog(int Sayfa = 1)
         {
-            return View(db.Blog.Include("Kategori").OrderByDescending(x => x.Blogıd).ToPagedList(Sayfa, 5));
+            return View(db.Blog.Include("Kategori").OrderByDescending(x => x.Id).ToPagedList(Sayfa, 5));
 
         }
         public ActionResult BlogDetay(int id)
         {
-            var b = db.Blog.Include("Kategori").Where(x => x.Blogıd == id).SingleOrDefault();
+            var b = db.Blog.Include("Kategori").Where(x => x.Id == id).SingleOrDefault();
             return View(b);
         }
 
-        public  JsonResult YorumYap(string adsoyad, string eposta, string icerik, int Blogıd)
+        public JsonResult YorumYap(string adsoyad, string eposta, string icerik, int Blogıd)
         {
 
-            if(icerik == null)
+            if (icerik == null)
             {
                 return Json(true, JsonRequestBehavior.AllowGet);
             }
             else
             {
-                db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Içerik = icerik, Blogıd = Blogıd, Onay=false });
+                db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Içerik = icerik, Blogıd = Blogıd, Onay = false });
                 db.SaveChanges();
                 Response.Redirect("/Home/BlogDetay/" + Blogıd);
 
-                
+
             }
-                return Json(false, JsonRequestBehavior.AllowGet);
+            return Json(false, JsonRequestBehavior.AllowGet);
             //Json verilerinin alınıp gönderilmesine izin veriyoruz!
         }
-
-        public ActionResult FooterPartial()
+        public PartialViewResult FooterPartial()
         {
             ViewBag.Iletisim = db.Iletisim.SingleOrDefault() ?? new Iletisim();
-            ViewBag.Blog = db.Blog.ToList().OrderByDescending(x => x.Blogıd);
+            ViewBag.Blog = db.Blog.ToList().OrderByDescending(x => x.Id);
             return PartialView();
         }
 
