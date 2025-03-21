@@ -17,12 +17,16 @@ namespace KurumsalWebProjesii.Controllers
         //Bu kısım, Kimlik verilerini yöneten Controller sınıfıdır.
         KurumsalDBContext db = new KurumsalDBContext();
 
-        // GET: Kimlik
+        // GET: Kimli
         public ActionResult Index()
         {
             return View(db.Kimlik.ToList());
             //Kimlik tablosundaki tüm verileri çekip Index sayfasına gönderiyor.
         }
+
+
+
+
 
 
         // GET: Kimlik/Edit/5
@@ -67,7 +71,9 @@ namespace KurumsalWebProjesii.Controllers
                 k.KeyWords = kimlik.KeyWords;
                 k.Description = kimlik.Description;
                 k.Unvan = kimlik.Unvan;
-                int v = db.SaveChanges();
+                db.SaveChanges();
+
+
                 return RedirectToAction("Index");
 
             }

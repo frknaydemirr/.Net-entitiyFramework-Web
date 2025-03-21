@@ -47,6 +47,10 @@ namespace KurumsalWebProjesii.Controllers
                 img.Save("~/Uploads/Blog/" + blogimgname);
                 blog.ResimURL = "/Uploads/Blog/" + blogimgname;
             }
+            if (string.IsNullOrEmpty(blog.Icerik))
+            {
+                blog.Icerik = "Bu Blog içeriği henüz eklenmedi!";
+            }
             db.Blog.Add(blog);
             db.SaveChanges();
             return RedirectToAction("Index");
@@ -95,7 +99,7 @@ namespace KurumsalWebProjesii.Controllers
                     b.ResimURL = "/Uploads/Blog/" + blogimgname;
                 }
                 b.Baslık = blog.Baslık;
-                b.Icerik = blog.Icerik;
+                b.Icerik = string.IsNullOrWhiteSpace(blog.Icerik) ? "Bu blogun içeriği henüz eklenmemiştir." : blog.Icerik;
                 b.Kategoriıd = blog.Kategoriıd;
                 db.SaveChanges();
                 return RedirectToAction("Index");

@@ -43,13 +43,9 @@
 
                         <h2 class="title">
                             @*@Html.Raw(@Model.Icerik)*@
-                            @*aaaaaaaa*@
-                            @Model.Icerik
-                            <!---h2 TAGI BOŞTA KALIYOR BUNU SOR ADMİNDEN GELEN BLOG KAYITLARINDA
-                            DÜZENLE KISMI SORUNLU, ICERİK KISMINI ÇEKTİĞİMİZ HALDE YANSITMIYOR
-                            SOR!!!
-                            Menü de anasayfa ya gitmiyor hata alıyoruz onu da sor mutlaka!
-                            son OLARAK HER ŞEY DOĞRU MAİL ATMIYOR BUNU DA SOR!-->
+                            @*aaaaaaaa
+                            *@<!--Model.Icerik-->
+
                         </h2>
 
                         <div class="d-flex align-items-center">
@@ -78,7 +74,7 @@
                     <section id="comment-form" class="comment-form section">
                         <div class="container ">
 
-                            <form action="/Home/YorumYap">
+                            <form action="/Home/YorumYap/@Model.Id">
 
                                 <h4>Yorum Yap</h4>
                                 <div class="row ">
@@ -144,3 +140,4 @@
     })
 
 </script>*@
+<script src="~/Scripts/jquery-3.7.1.js"></script>

@@ -93,6 +93,7 @@ namespace KurumsalWebProjesii.Controllers
         public JsonResult YorumYap(string adsoyad, string eposta, string icerik, int Blogıd)
         {
 
+
             if (icerik == null)
             {
                 return Json(true, JsonRequestBehavior.AllowGet);
@@ -102,11 +103,11 @@ namespace KurumsalWebProjesii.Controllers
                 db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Içerik = icerik, Blogıd = Blogıd, Onay = false });
                 db.SaveChanges();
                 Response.Redirect("/Home/BlogDetay/" + Blogıd);
-
+                return Json(false, JsonRequestBehavior.AllowGet);
+            //Json verilerinin alınıp gönderilmesine izin veriyoruz!
 
             }
-            return Json(false, JsonRequestBehavior.AllowGet);
-            //Json verilerinin alınıp gönderilmesine izin veriyoruz!
+            
         }
         public PartialViewResult FooterPartial()
         {
