@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title -Kurumsal Web Sitemiz</title>
-    <meta name="description" content="">
+    <title>@ViewBag.Title  @ViewBag.Kimlik.Title</title>
+    <meta name="description" content="@Html.Raw(ViewBag.Kimlik.Description)"
+    <meta name="keywords" content="@ViewBag.Kimlik.KeyWords" />
 
 
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
@@ -48,19 +49,20 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-            <a href="/Home/Index/" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="sitename">KURUMSALWEB</h1>
+            <a href="/Anasayfa/" class="logo d-flex align-items-center">
+               
+                <img src="@ViewBag.Kimlik.LogoURL" height="30" width="75"> 
+                @ViewBag.Kimlik.Unvan
+                
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="/Home/Index/" class="active">Ana Sayfa</a></li>
-                    <li><a href="/Home/Hakkimizda/">Hakkımızda</a></li>
-                    <li><a href="/Home/Hizmetlerimiz/">Hizmetlerimiz</a></li>
-                    <li><a href="/Home/Blog/">Blog</a></li>
-                    <li><a href="/Home/Iletisim/">İletişim</a></li>
+                    <li><a href="/Anasayfa/" class="active">Ana Sayfa</a></li>
+                    <li><a href="/Hakkimizda/">Hakkımızda</a></li>
+                    <li><a href="/Hizmetlerimiz/">Hizmetlerimiz</a></li>
+                    <li><a href="/Blog/">Blog</a></li>
+                    <li><a href="/iletisim/">İletişim</a></li>
                     @*<li class="dropdown">
                         <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
