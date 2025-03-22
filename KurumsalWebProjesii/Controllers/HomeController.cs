@@ -95,6 +95,9 @@ namespace KurumsalWebProjesii.Controllers
             return View(db.Blog.Include("Kategori").OrderByDescending(x => x.Id).ToPagedList(Sayfa, 5));
 
         }
+
+
+        [Route("Blog/{baslik}-{id:int}")]
         public ActionResult BlogDetay(int id)
         {
             ViewBag.kimlik = db.Kimlik.SingleOrDefault();
@@ -108,6 +111,8 @@ namespace KurumsalWebProjesii.Controllers
         //    var sonPost = db.Blog.OrderByDescending(x => x.Id).Take(5).ToList();
         //    return View(sonPost);
         //}
+
+
 
         public JsonResult YorumYap(string adsoyad, string eposta, string icerik, int Blogıd)
         {

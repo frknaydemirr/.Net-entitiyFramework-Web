@@ -42,15 +42,13 @@
                         </div>
 
                         <h2 class="title">
-                            @*@Html.Raw(@Model.Icerik)*@
+                            @Html.Raw(@Model.Icerik)
                             @*aaaaaaaa
                             *@<!--Model.Icerik-->
 
                         </h2>
 
-                        <div class="d-flex align-items-center">
-                            <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        </div>
+                        
                     </article>
                  
 
@@ -106,12 +104,20 @@
 
                         <h3 class="widget-title">Categories</h3>
                         <ul class="mt-3">
-                            <li><a href="#">General <span>(25)</span></a></li>
-                            <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                            <li><a href="#">Travel <span>(5)</span></a></li>
-                            <li><a href="#">Design <span>(22)</span></a></li>
-                            <li><a href="#">Creative <span>(8)</span></a></li>
-                            <li><a href="#">Educaion <span>(14)</span></a></li>
+
+                            @if (Model.Kategori.Kategoriıd == 1) 
+                            {
+                                <li>
+                                    <a href="#">@Model.Kategori.KategoriAd <span>(@Model.Kategori.Kategoriıd)</span></a>
+                                </li>
+                            }
+                            else if (Model.Kategori.Kategoriıd == 2) { 
+                                <li>
+                                    <a href="#">@Model.Kategori.KategoriAd <span>(@Model.Kategori.Kategoriıd)</span></a>
+                                </li>
+                            }
+                           
+
                         </ul>
 
                     </div><!--/Categories Widget -->
@@ -186,7 +192,7 @@
                 </div>
 
         </div>
-        </div>
+
     </section>
 
 
