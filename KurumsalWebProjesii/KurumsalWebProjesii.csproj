@@ -1734,6 +1734,8 @@
     <Content Include="Views\Home\Iletisim.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\BlogDetay.cshtml" />
+    <Content Include="Views\Admin\Adminler.cshtml" />
+    <Content Include="Views\Admin\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
