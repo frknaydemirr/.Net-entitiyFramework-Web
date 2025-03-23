@@ -41,14 +41,18 @@ namespace KurumsalWebProjesii.Controllers
 
 
         [HttpPost] //login de form post olacak
-        public ActionResult Login(Admin admin) //admin modeli alır parametre;
+        public ActionResult Login(Admin admin,string sifre) //admin modeli alır parametre;
         {
-            var login = db.Admin.Where(x => x.Eposta == admin.Eposta).SingleOrDefault();
-            if (login != null && login.Eposta == admin.Eposta && login.Sifre==admin.Sifre)
+            //şifreyi md5 e çevşrme olayını sor -> güncelleme yaptıktan sonra giriş yap diyince girmiyor!
+            var md5pas = Crypto.Hash(sifre, "MD5");
+            var login = db.Admin.Where(x => x.Eposta == admin.Eposta).FirstOrDefault();
+
+            if (login != null && login.Eposta == admin.Eposta && login.Sifre==admin.Sifre  /*&& login.Sifre==md5pas*/)
             {
                 //oturum değişkeni oluşturma:
                 Session["adminid"] = login.Adminıd;
                 Session["eposta"] = login.Eposta;
+                Session["yetki"] = login.Yetki;
                 return RedirectToAction("Index","Admin");
             }
             ViewBag.Uyari = "Kullanıcı adı yada şifre yanlış!";
@@ -63,6 +67,43 @@ namespace KurumsalWebProjesii.Controllers
             return RedirectToAction("Login/Admin");
             
         }
+
+
+        //şifre unutma:
+        public ActionResult SifremiUnuttum()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SifremiUnuttum(string eposta)
+        {
+            var mail = db.Admin.Where(x => x.Eposta == eposta).SingleOrDefault();
+            if (mail!=null)
+            {
+                Random rnd = new Random();
+                int yenisifre = rnd.Next();
+                Admin admin = new Admin();
+                mail.Sifre = Crypto.Hash(Convert.ToString(yenisifre), "MD5");
+                db.SaveChanges();
+
+                WebMail.SmtpServer = "smtp.gmail.com";
+                WebMail.EnableSsl = true;
+                WebMail.UserName = "kurumsawebkurumsalweb@gmail.com";
+                WebMail.Password = "Kurumsalweb123";
+                WebMail.SmtpPort = 587;
+                WebMail.Send(eposta,"Admin Panel Giriş Şifreniz","Şifreniz : " + yenisifre);
+                ViewBag.Uyari = "Mesajınız başarıyla gönderildi!";
+            }
+            else
+            {
+                ViewBag.Uyari = "Hata oluştu tekrar deneyiniz!";
+            }
+
+            return View();
+        }
+
+
 
         public ActionResult Adminler()
         {
@@ -88,6 +129,40 @@ namespace KurumsalWebProjesii.Controllers
         }
 
 
+        public ActionResult Edit(int id)
+        {
+            var a = db.Admin.Where(x => x.Adminıd == id).SingleOrDefault();
+            return View(a);
+        }
+        [HttpPost]
+        public ActionResult Edit(int id,Admin admin,string sifre , string eposta)
+        {
+
+            if (ModelState.IsValid){
+
+                var a = db.Admin.Where(x => x.Adminıd == id).SingleOrDefault();
+                a.Sifre = Crypto.Hash("sifre", "MD5");
+                a.Eposta = admin.Eposta;
+                a.Yetki = admin.Yetki;
+                db.SaveChanges();
+                return RedirectToAction("Adminler");
+            }
+
+            return View(admin);
+        }
+        public ActionResult Delete(int id)
+        {
+            var a = db.Admin.Where(x => x.Adminıd == id).SingleOrDefault();
+            if (a != null)
+            {
+                db.Admin.Remove(a);
+                db.SaveChanges();
+                return RedirectToAction("Adminler");
+            }
+            return View();
+        }
+
     }
+
     
 }
