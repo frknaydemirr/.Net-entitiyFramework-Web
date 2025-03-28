@@ -21,14 +21,14 @@
         <div class="form-group">
             <label for="cemail" class="control-label col-lg-2">Kategori <span class="required">*</span></label>
             <div class="col-lg-10">
-                @Html.DropDownList("KategoriId", (IEnumerable<SelectListItem>)ViewBag.KategoriId, "Kategori Seçin", new { @class = "form-control" })
+                @Html.DropDownList("Kategoriıd", null, new { @class = "form-control" })
 
             </div>
         </div>
         <div class="form-group">
             <label for="Aciklama" class="control-label col-lg-2">İçerik <span class="required">*</span></label>
             <div class="col-lg-10">
-                <textarea id="Aciklama" name="Aciklama" class="tinymce-editor" required>@Model.Icerik
+                <textarea id="Icerik" name="Icerik" class="tinymce-editor" required>@Model.Icerik
       </textarea>
             </div>
         </div>

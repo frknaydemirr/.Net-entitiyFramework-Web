@@ -89,6 +89,7 @@ namespace KurumsalWebProjesii.Controllers
 
         }
         [Route("Blog")]
+        [Route("Blog/{Sayfa}")] 
         public ActionResult Blog(int Sayfa = 1)
         {
             ViewBag.kimlik = db.Kimlik.SingleOrDefault();
@@ -116,22 +117,17 @@ namespace KurumsalWebProjesii.Controllers
 
         public JsonResult YorumYap(string adsoyad, string eposta, string icerik, int Blogıd)
         {
-
-
-            if (icerik == null)
+            if (string.IsNullOrEmpty(icerik))
             {
-                return Json(true, JsonRequestBehavior.AllowGet);
+                return Json(new { success = false, message = "Yorum içeriği boş olamaz!" }, JsonRequestBehavior.AllowGet);
             }
             else
             {
                 db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Içerik = icerik, Blogıd = Blogıd, Onay = false });
                 db.SaveChanges();
-                Response.Redirect("/Home/BlogDetay/" + Blogıd);
-                return Json(false, JsonRequestBehavior.AllowGet);
-            //Json verilerinin alınıp gönderilmesine izin veriyoruz!
 
+                return Json(new { success = true, message = "Yorumunuz eklendi, kontrol edildikten sonra yayınlanacaktır!" }, JsonRequestBehavior.AllowGet);
             }
-            
         }
         public PartialViewResult FooterPartial()
         {

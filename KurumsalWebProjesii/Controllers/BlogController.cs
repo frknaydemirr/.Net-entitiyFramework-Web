@@ -13,7 +13,8 @@ namespace KurumsalWebProjesii.Controllers
     public class BlogController : Controller
     {
         // GET: Blog
-        private KurumsalDBContext db = new KurumsalDBContext();
+        private KurumsalDBContext db = new KurumsalDBContext(); 
+        [Route("BlogDetay")] 
         public ActionResult Index()
         {
 
@@ -22,8 +23,8 @@ namespace KurumsalWebProjesii.Controllers
             // blog kayıtlarını liste şekline getir (veritabanı) ->en son yazdığımız kayıda göre sıralar
 
         }
-
-
+        [Route("YeniBlog")]
+        
         //blog ekleme eventi
         public ActionResult Create()
         {
@@ -72,7 +73,7 @@ namespace KurumsalWebProjesii.Controllers
                 return HttpNotFound();
             }
             ;//Veri taşıma işlemi:
-            ViewBag.KategoriId = new SelectList(db.Kategori, "Kategoriıd", "KategoriAd", b.Kategoriıd);
+            ViewBag.Kategoriıd = new SelectList(db.Kategori, "Kategoriıd", "KategoriAd", b.Kategoriıd);
             return View(b);
         }
         [HttpPost]

@@ -6,6 +6,8 @@
 
 <h2>BlogDetay</h2>
 
+<!-- jQuery'yi başlık kısmına ekleyin -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 <main class="main">
@@ -48,9 +50,9 @@
 
                         </h2>
 
-                        
+
                     </article>
-                 
+
 
 
 
@@ -58,31 +60,29 @@
                     <section id="comment-form" class="comment-form section">
                         <div class="container ">
 
-                            <form action="/Home/YorumYap/@Model.Id">
 
-                                <h4>Yorum Yap</h4>
-                                <div class="row ">
-                                    <div class=" form-group">
-                                        <input type="text" id="adsoyad" class="form-control" placeholder="Adınız Soyadınız" required>
-                                    </div>
+                            <h4>Yorum Yap</h4>
+                            <div class="row ">
+                                <div class=" form-group">
+                                    <input type="text" id="adsoyad" name="adsoyad" class="form-control" placeholder="Adınız Soyadınız" required>
                                 </div>
-                                <div class="row">
-                                    <div class="col form-group">
-                                        <input type="email" class="form-control" id="eposta" placeholder="Mail Adresiniz" required>
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col form-group">
+                                    <input type="email" class="form-control" name="eposta" id="eposta" placeholder="Mail Adresiniz" required>
                                 </div>
-                                <div class="row">
-                                    <div class="col form-group">
-                                        <textarea typeof="text" class="form-control" id="icerik"></textarea>
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col form-group">
+                                    <textarea typeof="text" name="icerik" class="form-control" id="icerik"></textarea>
                                 </div>
-                                <input type="hidden" name="Blogıd" value=" @Model.Id" />
+                            </div>
+                            <input type="hidden" name="Blogıd" value="@Model.Id" />
 
-                                <div class="text-center">
-                                    <button type="submit" id="gonder" class="btn btn-primary" value="Yorum Yap">Yorum Yap</button>
-                                </div>
+                            <div class="text-center">
+                                <button id="gonder" name="gonder" class="btn btn-primary">Yorum Yap</button>
+                            </div>
 
-                            </form>
 
                         </div>
                     </section><!-- /Comment Form Section -->
@@ -105,18 +105,19 @@
                         <h3 class="widget-title">Categories</h3>
                         <ul class="mt-3">
 
-                            @if (Model.Kategori.Kategoriıd == 1) 
+                            @if (Model.Kategori.Kategoriıd == 1)
                             {
                                 <li>
                                     <a href="#">@Model.Kategori.KategoriAd <span>(@Model.Kategori.Kategoriıd)</span></a>
                                 </li>
                             }
-                            else if (Model.Kategori.Kategoriıd == 2) { 
+                            else if (Model.Kategori.Kategoriıd == 2)
+                            {
                                 <li>
                                     <a href="#">@Model.Kategori.KategoriAd <span>(@Model.Kategori.Kategoriıd)</span></a>
                                 </li>
                             }
-                           
+
 
                         </ul>
 
@@ -135,7 +136,7 @@
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <img  src="@Model.ResimURL" alt="" class="flex-shrink-0">
+                            <img src="@Model.ResimURL" alt="" class="flex-shrink-0">
                             <div>
                                 <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
@@ -143,7 +144,7 @@
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <img  src="@Model.ResimURL" alt="" class="flex-shrink-0">
+                            <img src="@Model.ResimURL" alt="" class="flex-shrink-0">
                             <div>
                                 <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
@@ -151,7 +152,7 @@
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <img  src="@Model.ResimURL" alt="" class="flex-shrink-0">
+                            <img src="@Model.ResimURL" alt="" class="flex-shrink-0">
                             <div>
                                 <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
@@ -159,7 +160,7 @@
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <img  src="@Model.ResimURL" alt="" class="flex-shrink-0">
+                            <img src="@Model.ResimURL" alt="" class="flex-shrink-0">
                             <div>
                                 <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
@@ -189,7 +190,7 @@
 
                 </div>
 
-                </div>
+            </div>
 
         </div>
 
@@ -200,27 +201,31 @@
 
 
 </main>
-@*<script type="text/javascript">
-    $(document).ready(function () {
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#gonder").click(function () {
+        var adisoyadi = $("#adsoyad").val();
+        var epostasi = $("#eposta").val();
+        var yorumunuz = $("#icerik").val();
 
-        $("#gonder").click(function () {
-            var adisoyadi = $("#adsoyad").val();
-            var epostasi = $("#eposta").val();
-            var yorumunuz = $("#icerik").val();
-            $.ajax({
-
-                url: '/Home/YorumYap/',
-                data: { adsoyad: adisoyadi, eposta: epostasi, icerik: yorumunuz,blogid: @Model.Id },
-                type: 'POST',
-                dataType: 'Json',
-                success: function (data) {
-                    alert(adisoyadi + " - Yorumunuz eklendi, kontrol edildikten sonra yayınlanacaktır!");
+        $.ajax({
+            url: '/Home/YorumYap/',
+            data: { adsoyad: adisoyadi, eposta: epostasi, icerik: yorumunuz, Blogıd: @Model.Id },
+            type: 'POST',
+            dataType: 'json',  // json yerine 'Json' yazmak hataya yol açabilir.
+            success: function (data) {
+                if (data.success) {
+                    alert(adisoyadi + " - " + data.message); // Başarı mesajı
+                } else {
+                    alert(data.message); // Hata mesajı
                 }
-            });
-
-
+            },
+            error: function (xhr, status, error) {
+                alert("Bir hata oluştu: " + error);
+            }
         });
-    })
+    });
+});
 
-</script>*@
-<script src="~/Scripts/jquery-3.7.1.js"></script>
+
+</script> 
