@@ -96,4 +96,10 @@ Bu proje, bir kurumsal şirket için modern, kullanıcı dostu ve responsive (mo
 ![Ekran görüntüsü 2025-04-02 103920](https://github.com/user-attachments/assets/726831f8-8338-4602-b39f-7d45dfe6e1d0)
 
 
+## Veri Tabanı Diyagramı
+
+![Ekran görüntüsü 2025-04-06 011218](https://github.com/user-attachments/assets/7b78d99c-0471-4284-b46e-c9d24f62607e)
+
+
+
 
